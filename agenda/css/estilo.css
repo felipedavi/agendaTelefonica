@@ -1,0 +1,133 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #E3F8FA;
+}
+
+.container {
+	background-color: rgb(255,255,255);
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+h1, h2, h3 {
+	text-align: center;
+	color: rgb(0,50,100);
+	border: 0;
+	padding: 5px 0;
+}
+
+.centraliza {
+	text-align: center;
+}
+
+/*===================================================================================
+   Estilos usados nos formulários. Os tamanhos de texto são definidos pelo Bootstrap
+=====================================================================================*/
+
+fieldset {
+	color: rgb(150,0,0);
+	font: arial, sans-serif;
+	border-color: rgb(0,50,100);
+}
+
+legend {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.5em;
+	color: rgb(0,50,100);
+	border-color: rgb(0,50,100);
+}
+
+label {
+	color: rgb(0,50,100);
+	font: verdana, sans-serif;
+}
+
+input, select {
+	color: rgb(0,50,100);
+	border-color: rgb(0,50,100);
+}
+
+form {
+	background-color: rgb(255,255,255);
+	padding: 15px;
+
+	/*
+		centraliza form usando propriedade 'auto' para margens direita e esquerda (largura-width da div)/2
+	*/
+	margin: 0 auto;
+	border: 2px solid rgb(0,50,100);
+	/*
+		estilos para arredondar todas as "quinas" dos formuários
+	*/
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/*==============================================
+   Estilos usados pelas navbars e no index.php
+================================================*/
+
+/* retira as margens das barras de navegação */ 
+.sem-margem {
+  	margin: 0;
+}
+
+.inicial {
+	background-color: white;
+	color: rgb(0,50,100);
+	margin: 30px 0;
+	padding: 10px;
+}
+
+.inicial p {
+	font-size: 1.5em
+}
+
+.inicial h1 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/*============================================
+  Estilos para tabela responsiva do bootstrap
+  ============================================*/
+
+tr, td, th {
+  font-family: verdana;
+  padding: 5px 10px;
+}
+
+th {
+  color: rgb(255,255,255);
+  background-color: #2F2472; /* mesma cor de fundo da navbar */
+}
+
+/*
+	estilos necessários para mudar a cor de fundo das linha zebradas da tabela. Começa com a
+	classe ".table-striped", que significa "tabela listrada" e vai até os <td> (ver comentário
+	sobre os estilos hover abaixo). O estilo "tr:nth-child(odd)" coloca cor de fundo nas linhas
+	ímpares da tabela, e o estilo "tr:nth-child(even)" faz o mesmo nas linhas pares.
+*/
+.table-striped tbody tr:nth-child(odd) td {
+	background-color: #EDFCFC;
+}
+
+.table-striped tbody tr:nth-child(even) td {
+	background-color: #CFE3E3;
+}
+
+/*
+	estilos necessários para mudar a cor de uma linha da tabela quando o mouse
+	estiver sobre ela (hover). Começa com a classe ".table-hover" e continua até
+	o <td>, por precaução, caso algum estilo de cor tenha sido aplicado aos <td>
+	antes desse. Coloque esses comandos sempre após todos os outros aplicados aos
+	elementos (tags) de tabela.
+*/
+.table-hover tbody tr:hover td {
+  background-color: #2f2472; /* mesma cor de fundo da navbar */
+  color: rgb(255,255,0); /* texto amarelo */
+}

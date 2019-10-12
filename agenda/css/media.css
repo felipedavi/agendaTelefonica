@@ -1,0 +1,30 @@
+/*
+	Media queries para 4 breakpoints do bootstrap. Os intervalos de largura de tela são:
+	- até 767px 
+	- entre 768px e 991px
+	- entre 992px e 1199px
+	- maior que 1199px (1200px em diante)
+
+	Sansung S6 - modo retrato: largura de tela=412px
+	Sansung S6 - modo paisagem: largura de tela=732px
+*/
+
+@media only screen and (max-width: 767px) { 
+     h2 { font-size: 1.8em; font-weight: bold; } 
+     .jumbotron h1 { font-size: 1.9em; font-weight: bold; } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+     h2 { font-size: 0.8em; font-weight: bold; }     
+     .jumbotron h1 { font-size: 2.2em; font-weight: bold; } 
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) { 
+     h2 { font-size: 1.0em; font-weight: bold; }
+     .jumbotron h1 { font-size: 2.5em; font-weight: bold; } 
+}
+
+@media only screen and (min-width: 1200px) {
+     h2 { font-size: 1.4em; font-weight: bold; }  
+     .jumbotron h1 { font-size: 3.1em; font-weight: bold;} 
+}
